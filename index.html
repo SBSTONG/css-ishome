@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://github.com/SBSTONG/css-ishome/edit/master/style.min.css">
+</head>
+<body>
+    <center class="wrapp-box-nonavbar">
+        <div class="container-fluid">
+            <nav class="navbar">
+                <div class="tool">
+                    <img class="navbar-brand" src="appIcon.png">
+                    <strong>ISHOME (Internet and SmartHome)</strong>
+                    <button class="button btn-small"><span>Logout</span></button>
+                </div>
+                <div class="clear-fixed"></div> 
+            </nav>
+            <br/><br/>
+            <h3>Air controller</h3>
+            <section class="main">
+                <div class="box-fan">
+
+                </div>
+                <div class="switch demo4">
+                    <input type="checkbox">
+                    <label><i class="material-icons">&#xE8C6;</i></label>
+                </div>
+            </section>
+            <hr/>
+            <h3>Light and Puls controller</h3>
+            <br/>
+            <section class="main">
+                <div class="switch demo2">
+                    <input type="checkbox">
+                    <label></label>
+                    <strong>ON</strong>
+                </div>
+                <div class="switch demo2">
+                    <input type="checkbox">
+                    <label></label>
+                    <strong>ON</strong>
+                </div>
+                <div class="switch demo3">
+                    <input type="checkbox">
+                    <label><i></i></label>
+                </div>
+            </section>
+            
+            
+        </div>
+
+        <div class="container-box">
+            <h1>Welcome to ISHOME</h1>
+            <center><img src='logoapp.png'/></center>
+            <center style="max-width:400px;margin-top:20px;">
+                    <form>
+                        <div class="group">      
+                            <input type="text" placeholder="username" required>
+                    
+                            <i class="material-icons">&#xE55A;</i>
+                        </div>
+                            
+                        <div class="group">      
+                            <input type="password" id="pwdInput" placeholder="Password" required>
+                            <i class="material-icons">&#xE0DA;</i>
+                            <a href="#"><i class="material-icons" id="showpass" onmousedown="showpasswd()">&#xE8F4;</i></a>
+                        </div>
+                        
+                        <button class="button"><span>Login</span></button>
+                    </form>
+            </center>
+        </div>
+        <small style="color:#beb5b5;">Create By : SBS-THONG - YERN</small><small style="color:#beb5b5;float:right;">v 0.0.1</small>
+    </center>
+    <script>
+        function showpasswd(){
+            var pwdInput = document.getElementById("pwdInput");
+            var pwdshow = document.getElementById("showpass");
+            pwdshow.innerHTML = "&#xE8F5;";
+            return true;
+        }
+    </script>
+</body>
+</html>
